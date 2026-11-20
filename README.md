@@ -118,3 +118,10 @@ A few honest notes on things that went wrong during this project and how they we
 - **A handful of `product_category_name` values don't exist in the category translation table** (e.g. `pc_gamer`, near-duplicates of categories that do exist under a slightly different name). This surfaces as a small, known gap wherever the model inner-joins to the translation table, and is called out explicitly rather than silently absorbed.
 - **Two prototype views (`vw_category_revenue`, `vw_monthly_revenue`, `vw_state_revenue`) were built during initial modeling and later replaced** by direct DAX measures once the dashboard's real requirements became clearer. They were dropped from the final SQL rather than left in the repo unused.
 - **RFM thresholds are quintile-derived**, not arbitrary round numbers — recency, frequency, and monetary boundaries were calculated from the actual distribution of delivered-order customers, not picked by inspection.
+
+## Power BI Dashboard
+
+The project includes an interactive Power BI dashboard
+for analysing e-commerce performance.
+
+[Download Power BI Dashboard (.pbix)](https://github.com/Adityastarfield/olist-ecommerce-analytics/releases/tag/v1.0)
